@@ -1,0 +1,81 @@
+/*Condiciones normales de los elementos*/
+
+p {
+    color:blue !important;
+    background-color:yellow;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+   display: none; 
+}
+
+.sombraAtras{
+    transform: translate(0%,100%);
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Caracteristicas de la caja que contiene la foto */
+
+.cajaPrincipal {
+    margin: auto;
+    width: 300px;
+    max-width: 300px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+img:active{
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+/* Condiciones */
+
+/*Si hacemos click sobre el class main, creara la sombra, atribuyendo una inclinacion y escala de gris*/
+
+.sombraAtras:active {
+    transform: scale(0.85) skewX(20deg) translate(-60%, 126%);
+    z-index: -1;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(1);
+}
+
+/*Si hacemos click sobre el class main, invertira la fila y veremos las imagenes en sentido contrario*/
+
+.main:active{
+    flex-direction: row-reverse;
+}
+
+/*Si estamos encima, aumenta h2 en un 20%*/
+
+h2:hover {
+    transform: scale(1.2);
+}
+
+
+/*Si la pantalla es menor a 550px*/
+
+@media screen and (max-width:550px) {
+    
+    .cajaPrincipal {
+        display: none;
+    }
+
+    h1 {
+       display: inline-block;
+       width: 100%;
+       height: 40px;
+       color: black;
+       background-color:lightgray; 
+    }
+   
+}

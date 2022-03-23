@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="biblioteca.xsl"?>
+<biblioteca>
+  <libro>
+    <foto>miki.webp</foto>
+    <sexo>Macho</sexo>
+    <titulo>Miki con suenio</titulo>
+    <autor>Miki el Gato</autor>
+    <fechaPublicacion año="2022" />
+  </libro>
+  <libro>
+    <foto>summer.webp</foto>
+    <sexo>Hembra</sexo>
+    <titulo>Summer al solecito</titulo>
+    <autor fechaNacimiento="28/03/1936">Summer la Gata</autor>
+    <fechaPublicacion año="1973" />
+  </libro>
+  <libro>
+    <foto>senda.webp</foto>
+    <sexo>Hembra</sexo>
+    <titulo>Senda haciendo yoga</titulo>
+    <autor fechaNacimiento="28/03/1936">Senda la Gata</autor>
+    <fechaPublicacion año="1969" />
+  </libro>
+</biblioteca>
